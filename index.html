@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta
+  name="description"
+  content="Portfolio of Yash, a Frontend Developer, Open Source Contributor, and B.Tech CSE student."
+/>
+<title>Yash — Frontend Developer & Open Source Contributor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">~/yash<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#toolbox">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#opensource">Open Source</a></li>
+    <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <span class="hero-eyebrow">B.Tech Student &amp; Developer</span>
+    <h1 class="hero-headline">
+      <span class="line"><span>BUILDING</span></span>
+      <span class="line"><span class="accent-teal">THINGS</span></span>
+      <span class="line"><span class="accent-outline">FOR THE</span></span>
+      <span class="line"><span>WEB.</span></span>
+    </h1>
+    <p class="hero-sub">B.Tech student exploring web development,
+open source, and the mysterious art of
+making code work before deadlines.</p>
+    <div class="hero-tags">
+      <span class="hero-tag tag-teal">FullStack Dev</span>
+      <span class="hero-tag tag-orange">Open Source</span>
+      <span class="hero-tag tag-yellow"> AI/ML </span>
+    </div>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Projects →</a>
+      <a href="#contact" class="btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="editorial-stage">
+      <div class="ep-cluster">
+
+        <!-- NOTEBOOK — anchor, sits centre of cluster -->
+        <div class="ep ep-notebook"
+             style="width:230px; top:105px; left:100px; --ep-rot:2deg; animation-delay:0.2s; z-index:10;">
+          <div class="nb-header">
+            <span class="nb-title">Dev Log</span>
+            <span class="nb-date">2024 – now</span>
+          </div>
+          <div class="nb-row">
+            <span class="nb-yr">2024</span>
+            <span class="nb-arrow">→</span>
+            <span class="nb-skill">HTML &amp; CSS</span>
+          </div>
+          <div class="nb-row">
+            <span class="nb-yr">2024</span>
+            <span class="nb-arrow">→</span>
+            <span class="nb-skill">JEE</span>
+          </div>
+          <div class="nb-row">
+            <span class="nb-yr">2025</span>
+            <span class="nb-arrow">→</span>
+            <span class="nb-skill">JavaScript</span>
+          </div>
+          <div class="nb-row">
+            <span class="nb-yr">2025</span>
+            <span class="nb-arrow">→</span>
+            <span class="nb-skill">Open Source</span>
+          </div>
+          <div class="nb-row nb-row-now">
+            <span class="nb-yr">Now</span>
+            <span class="nb-arrow">→</span>
+            <span class="nb-skill">MERN Stack</span>
+          </div>
+          <div class="nb-footer">
+            <strong>"the code works.<br>let's not ask why."</strong>
+          </div>
+        </div>
+
+        <!-- TAPE — pins notebook at top -->
+        <div class="ep ep-tape"
+             style="width:50px; top:98px; left:188px; --ep-rot:-2deg; animation-delay:0.18s; z-index:15;">
+        </div>
+
+        <!-- POLAROID — top-left, overlaps notebook corner by ~20px -->
+        <div class="ep ep-polaroid"
+             style="width:128px; top:18px; left:8px; --ep-rot:-5deg; animation-delay:0.42s; z-index:8;">
+          <div class="ep-polaroid-img"
+               style="width:100%;height:94px;background:linear-gradient(135deg,#e8f8f5,#c8ede8);border-radius:2px;">
+            <span style="font-size:2rem;">🌐</span>
+          </div>
+          <div class="ep-polaroid-caption">
+            first website<br>
+            <span style="color:var(--teal);font-weight:700;">'24</span>
+          </div>
+        </div>
+
+        <!-- TAPE — holds polaroid top-centre -->
+        <div class="ep ep-tape"
+             style="width:38px; top:13px; left:54px; --ep-rot:4deg; animation-delay:0.4s; z-index:12;">
+        </div>
+
+        <!-- GSSoC ACHIEVEMENT — top-right, overlaps notebook top-right corner -->
+        <div class="ep ep-achievement"
+             style="width:148px; top:22px; left:258px; --ep-rot:3.5deg; animation-delay:0.52s; z-index:9;">
+          <div class="ep-achievement-label">Achievement</div>
+          <div class="ep-achievement-value">GSSoC '26<br>Contributor</div>
+          <div class="ep-achievement-sub">4+ PRs Merged</div>
+        </div>
+
+        <!-- PIN DOT — on GSSoC tag -->
+        <div class="ep ep-pin"
+             style="top:17px; left:392px; background:#F96635; --ep-rot:0deg; animation-delay:0.53s; z-index:20;">
+        </div>
+
+        <!-- STICKY — bottom-left, peeks from under notebook -->
+        <div class="ep ep-sticky"
+             style="width:138px; top:348px; left:5px; background:#FFF9E6; color:#5c4a00; --ep-rot:-3deg; animation-delay:0.65s; z-index:8;">
+          <strong>currently</strong>
+          Learning MERN —<br>one bug at a time.
+        </div>
+
+        <!-- PIN DOT — on sticky -->
+        <div class="ep ep-pin"
+             style="top:343px; left:68px; background:#2BBAA5; --ep-rot:0deg; animation-delay:0.66s; z-index:20;">
+        </div>
+
+        <!-- QUOTE SLIP — bottom-right, sits beside/below notebook -->
+        <div class="ep ep-quote"
+             style="width:150px; top:358px; left:258px; --ep-rot:4deg; animation-delay:0.75s; z-index:8;">
+          "Open to internships &amp; collabs — let's build."
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT — BENTO -->
+<section id="about">
+  <div class="reveal" style="margin-bottom:3rem">
+    <p class="section-label">"README.md"</p>
+    <h2 class="section-title">The human behind the commits.</h2>
+  </div>
+  <div class="about-bento">
+    <!-- Big text card spans col 1, rows 1–2 -->
+    <div class="bento-text reveal">
+      <div>
+        <p>Hey — I'm Yash, a B.Tech student who likes building things for the web and figuring out how they work under the hood.</p>
+
+<p>Most of my time currently goes into frontend development, open source contributions, and exploring the MERN stack. I'm the kind of person who can spend an hour fixing a tiny UI detail and somehow enjoy it.</p>
+
+<p>Right now I'm focused on becoming a better engineer, shipping projects, contributing to open source, and learning enough every day to stay one step ahead of my bugs.</p>
+
+      </div>
+    </div>
+    <!-- Wide stat card: top right -->
+    <div class="bento-stat-wide reveal reveal-delay-1">
+      <div>
+        <div class="bento-big-num">4+</div>
+        <div class="bento-big-label">PRs Merged</div>
+      </div>
+      <div style="width:1px;height:60px;background:rgba(43,186,165,0.2)"></div>
+      <div>
+        <div class="bento-big-num">3</div>
+        <div class="bento-big-label">Live Projects</div>
+      </div>
+      <div style="width:1px;height:60px;background:rgba(43,186,165,0.2)"></div>
+      <div>
+        <div class="bento-big-num">1</div>
+        <div class="bento-big-label">Internship</div>
+      </div>
+      <div>
+        <div class="bento-big-num">∞</div>
+        <div class="bento-big-label">Curosity </div>
+      </div>
+    </div>
+    <!-- Two mini cards below stat -->
+    <div class="bento-small-row reveal reveal-delay-2">
+      <div class="bento-mini">
+        <div class="bento-mini-label">Currently Building</div>
+        <div class="bento-mini-value">MERN Stack Journey</div>
+      </div>
+      <div class="bento-mini">
+        <div class="bento-mini-label">Goal</div>
+        <div class="bento-mini-value">Full Stack Engineer</div>
+      </div>
+    </div>
+    <!-- Bottom row: 3 fact cards -->
+    <div class="bento-bottom-row reveal reveal-delay-3">
+      <div class="bento-fact fact-teal">
+        <span class="bento-fact-emoji">🌍</span>
+        <div class="bento-fact-label">Open Source</div>
+        <div class="bento-fact-value">GSSoC '26 Contributor</div>
+      </div>
+      <div class="bento-fact fact-orange">
+        <span class="bento-fact-emoji">🎓</span>
+        <div class="bento-fact-label">Main Quest</div>
+        <div class="bento-fact-value">B.Tech — Computer Science</div>
+      </div>
+      <div class="bento-fact fact-yellow">
+        <span class="bento-fact-emoji">🎮</span>
+        <div class="bento-fact-label">Side Quest</div>
+        <div class="bento-fact-value">Collecting questions
+worth exploring</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="toolbox" class="toolbox-section">
+
+    <div class="toolbox-layout">
+
+        <!-- LEFT SIDE -->
+
+        <div class="toolbox-heading-column">
+
+            <span class="toolbox-label">
+                MY SKILLS 
+            </span>
+
+            <h2 class="toolbox-title">
+                ARSENAL
+            </h2>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="toolbox-stack" id="toolboxStack">
+
+            <!-- CARD 1 -->
+            <div class="toolbox-card card-1">
+                <div class="card-header">
+                    <span class="card-index">1</span>
+                    <h3 class="card-title">Frontend</h3>
+                </div>
+                <div class="card-skills">
+                    <span class="skill-square">HTML</span>
+                    <span class="skill-square">CSS</span>
+                    <span class="skill-square">JavaScript</span>
+                    <span class="skill-square">Bootstrap</span>
+                    <span class="skill-square">Tailwind</span>
+                    <span class="skill-square">React</span>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="toolbox-card card-2">
+                <div class="card-header">
+                    <span class="card-index">2</span>
+                    <h3 class="card-title">Backend</h3>
+                </div>
+                <div class="card-skills">
+                    <span class="skill-square">Node.js</span>
+                    <span class="skill-square">Express</span>
+                    <span class="skill-square">MongoDB</span>
+                    <span class="skill-square">REST APIs</span>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="toolbox-card card-3">
+                <div class="card-header">
+                    <span class="card-index">3</span>
+                    <h3 class="card-title">AI / ML</h3>
+                </div>
+                <div class="card-skills">
+                    <span class="skill-square">Python</span>
+                    <span class="skill-square">NumPy</span>
+                    <span class="skill-square">Pandas</span>
+                    <span class="skill-square">Matplotlib</span>
+                    
+                    </span>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="toolbox-card card-4">
+                <div class="card-header">
+                    <span class="card-index">4</span>
+                    <h3 class="card-title">Developer Tools</h3>
+                </div>
+                <div class="card-skills">
+                    <span class="skill-square">Git</span>
+                    <span class="skill-square">GitHub</span>
+                    <span class="skill-square">VS Code</span>
+                    <span class="skill-square">Postman</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <p class="section-label">Featured Projects</p>
+    <h2 class="section-title" id="archive-title">ARCHIVE</h2>
+    <p style="color:var(--text-muted);font-size:2rem;margin-top:0.5rem;">Selected works &<br>
+ongoing experiments<p>
+  </div>
+ 
+
+
+
+    <div class="project-card reveal" data-project="calculator">
+      <div class="project-color-band" style="background:var(--teal)"></div>
+      <div class="project-card-header">
+        <div class="project-header-left">
+          <div class="project-num">I</div>
+          <div>
+            <div class="project-title">Hydra</div>
+            <div class="project-subtitle">An Experiment in talking to computers</div>
+          </div>
+        </div>
+        <div class="project-toggle-icon">+</div>
+      </div>
+      <div class="project-body">
+        <div class="project-body-inner">
+          <div class="project-body-content">
+            <p class="project-desc">A wake-word powered desktop voice assistant that responds to natural voice commands. Built to explore speech recognition, automation, and more intuitive ways of interacting with computers.</p>
+            <div class="project-stack">
+              <span class="stack-tag">Python</span><span class="stack-tag">CustomTkinter</span><span class="stack-tag">SpeechRecognition</span><span class="stack-tag">pyttsx3</span><span class="stack-tag">Wikipedia API</span><span class="stack-tag">PyWhatKit</span>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Wake word activation ("Hey Hydra")</li>
+                <li>Real-time speech recognition</li>
+                <li>Voice responses</li>
+                <li>YouTube music playback</li>
+                <li>Google search automation</li>
+                <li>Wikipedia integration</li>
+                <li>Conversation logging</li>
+                <li>Desktop GUI interface</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Yash-Chhipa/HYDRA-Voice-Assistant.git" target="_blank" class="project-link link-github">↗ GitHub</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1" data-project="portfolio">
+      <div class="project-color-band" style="background:var(--orange)"></div>
+      <div class="project-card-header">
+        <div class="project-header-left">
+          <div class="project-num">II</div>
+          <div>
+            <div class="project-title">Portfolio Website</div>
+            <div class="project-subtitle">Part playground, part digital scrapbook.</div>
+          </div>
+        </div>
+        <div class="project-toggle-icon">+</div>
+      </div>
+      <div class="project-body">
+        <div class="project-body-inner">
+          <div class="project-body-content">
+            <p class="project-desc">This very website — designed and built from scratch with an editorial, magazine-like aesthetic. Every section has its own personality. Built to feel like a creative experience rather than a resume.</p>
+            <div class="project-stack">
+              <span class="stack-tag">HTML</span><span class="stack-tag">CSS</span><span class="stack-tag">JavaScript</span><span class="stack-tag">Design</span>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Editorial-style art direction throughout</li>
+                <li>Scroll-triggered reveal animations</li>
+                <li>Interactive project explorer with smooth accordion</li>
+                <li>Fully responsive — mobile designed intentionally</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Yash-Chhipa/yash-portfolio.git" target="_blank" class="project-link link-github">↗ GitHub</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-2" data-project="music">
+      <div class="project-color-band" style="background:var(--yellow)"></div>
+      <div class="project-card-header">
+        <div class="project-header-left">
+          <div class="project-num">III</div>
+          <div>
+            <div class="project-title">Supply Chain Bottleneck Analyzer</div>
+            <div class="project-subtitle">Finding where systems slow down.</div>
+          </div>
+        </div>
+        <div class="project-toggle-icon">+</div>
+      </div>
+      <div class="project-body">
+        <div class="project-body-inner">
+          <div class="project-body-content">
+            <p class="project-desc">A data-driven analysis tool that identifies bottlenecks in supply chain workflows using simulation, queue modeling, and visualization techniques.
+
+Built to explore how delays propagate through systems and how operational inefficiencies can be detected through data.</p>
+            <div class="project-stack">
+              <span class="stack-tag">Python</span><span class="stack-tag">NumPy</span><span class="stack-tag">Pandas</span><span class="stack-tag">Matplotlib</span>
+            </div>
+            <div class="project-features">
+              <h4>Highlights</h4>
+              <ul>
+                <li>Supply chain workflow simulation</li>
+                <li>Bottleneck detection and analysis</li>
+                <li>Queue-based system modeling</li>
+                <li>Performance visualization</li>
+                <li>Automated report generation</li>
+                <li>Synthetic data generation</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/yash" target="_blank" class="project-link link-github">↗ GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-3" data-project="mern">
+      <div class="project-color-band" style="background:linear-gradient(90deg,var(--teal),var(--orange))"></div>
+      <div class="project-card-header">
+        <div class="project-header-left">
+          <div class="project-num">IV</div>
+          <div>
+            <div class="project-title">MERN Full-Stack App</div>
+            <div class="project-subtitle">The next chapter</div>
+          </div>
+        </div>
+        <div class="project-toggle-icon">+</div>
+      </div>
+      <div class="project-body">
+        <div class="project-body-inner">
+          <div class="project-body-content">
+            <p class="project-desc">Currently in development — a full-stack MERN application. My first production-grade backend integration, combining a React frontend with an Express + MongoDB backend and JWT auth.</p>
+            <div class="project-stack">
+              <span class="stack-tag">React</span><span class="stack-tag">Node.js</span><span class="stack-tag">Express</span><span class="stack-tag">MongoDB</span><span class="stack-tag">JWT</span>
+            </div>
+            <div class="project-features">
+              <h4>Planned Features</h4>
+              <ul>
+                <li>Full authentication system with JWT tokens</li>
+                <li>RESTful API with Express and Mongoose</li>
+                <li>Real-time updates via WebSocket</li>
+                <li>Production deployment on Render + Atlas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OPEN SOURCE -->
+<section id="opensource">
+  <div class="os-header reveal">
+    <p class="section-label">Open Source</p>
+    <h2 class="section-title">OPEN SOURCE JOURNAL</h2>
+    <h3 class="section-title">SUMMER 2k26</h3>
+  </div>
+  <div class="gssoc-banner reveal">
+    <div>
+      <div class="gssoc-title">GirlScript Summer of Code '26</div>
+      <div class="gssoc-sub">Contributing to real-world open source projects with a global community of developers.</div>
+    </div>
+    <div class="gssoc-stats">
+      <div class="gssoc-stat"><div class="gssoc-stat-num">4+</div><div class="gssoc-stat-label">PRs Merged</div></div>
+      <div class="gssoc-stat"><div class="gssoc-stat-num">3</div><div class="gssoc-stat-label">Repos</div></div>
+      <div class="gssoc-stat"><div class="gssoc-stat-num">1</div><div class="gssoc-stat-label">Program</div></div>
+    </div>
+  </div>
+  <div class="os-grid">
+    <div class="os-card reveal" style="border-top:3px solid var(--teal)">
+      <div class="os-card-type" style="color:var(--teal)">Merged PR</div>
+      <div class="os-card-title">Dynamic Dashboard Labels</div>
+      <div class="os-card-desc">Replaced hardcoded dashboard date-window labels with dynamic values derived from application constants. This ensures labels automatically stay in sync with configured time ranges and improves maintainability across the dashboard.</div>
+      <div class="os-card-meta"><span class="os-badge badge-merged">✓ Merged</span><span style="font-size:0.75rem;color:var(--text-muted)">DevTrack • GSSoC '26</span></div>
+    </div>
+    <div class="os-card reveal reveal-delay-1" style="border-top:3px solid var(--orange)">
+      <div class="os-card-type" style="color:var(--orange)">Merged PR</div>
+      <div class="os-card-title">Dashboard Consistency Fix</div>
+      <div class="os-card-desc">Audited dashboard components and removed hardcoded date references. Refactored the implementation to use centralized configuration values, reducing future maintenance effort and preventing label mismatches.</div>
+      <div class="os-card-meta"><span class="os-badge badge-merged">✓ Merged</span><span style="font-size:0.75rem;color:var(--text-muted)">Issue Solved • GSSoC'26</span></div>
+    </div>
+    <div class="os-card reveal reveal-delay-2" style="border-top:3px solid var(--yellow)">
+      <div class="os-card-type" style="color:#9a6800">Documentation</div>
+      <div class="os-card-title">README Overhaul</div>
+      <div class="os-card-desc">Rewrote project documentation with setup guides, API reference, and contribution instructions for a developer tools project.</div>
+      <div class="os-card-meta"><span class="os-badge badge-merged">✓ Merged</span><span style="font-size:0.75rem;color:var(--text-muted)">Open Source</span></div>
+    </div>
+    <div class="os-card reveal reveal-delay-3" style="border-top:3px solid var(--teal)">
+      <div class="os-card-type" style="color:var(--teal)">Feature</div>
+      <div class="os-card-title">Dark Mode Toggle</div>
+      <div class="os-card-desc">Implemented a persistent dark mode system using localStorage with smooth CSS variable transitions across an entire React app.</div>
+      <div class="os-card-meta"><span class="os-badge badge-active">Active</span><span style="font-size:0.75rem;color:var(--text-muted)">GSSoC '26</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STACK / FOUR THINGS — scroll-triggered stacked cards -->
+<div class="sticky-stack-section">
+  <div class="sticky-stack-intro reveal">
+    <p class="section-label" style="justify-content:center">What drives me</p>
+    <h2 class="section-title" style="text-align:center">THINGS THAT MAKE ME <br>
+LOSE TRACK OF TIME.</h2>
+  </div>
+  <div class="cards-stack-wrapper" id="stackWrapper">
+    <div class="stack-card">
+      
+      <div class="stack-card-body">
+        <div class="stack-card-title">🎧 Music</div>
+        <div class="stack-card-sub">Not listening to it.
+Building entire projects around one playlist.</div>
+      </div>
+    </div>
+    <div class="stack-card">
+      
+      <div class="stack-card-body">
+        <div class="stack-card-title">🗺️ Random Curiosity</div>
+        <div class="stack-card-sub">One search becomes fifteen tabs.</div>
+      </div>
+    </div>
+    <div class="stack-card">
+      <div class="stack-card-body">
+        <div class="stack-card-title">🌙 Late Night Ideas</div>
+        <div class="stack-card-sub">Usually terrible;
+Sometimes portfolio-worthy :)</div>
+      </div>
+    </div>
+    <div class="stack-card">
+      <div class="stack-card-body">
+        <div class="stack-card-title">📸 Screenshot Collector</div>
+        <div class="stack-card-sub">Thousands saved.
+Maybe three ever used.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="reveal">
+    <p class="section-label">Achievements</p>
+    <h2 class="section-title">Chapters worth mentioning.</h2>
+  </div>
+  <div class="achieve-grid">
+    <div class="achieve-card reveal">
+      <div class="achieve-year">UNLOCKED </div>
+      <div class="achieve-card-inner">
+        <span class="achieve-icon">🏆</span>
+        <div class="achieve-title">Smart India Hackathon</div>
+        <div class="achieve-org" style="color:var(--orange)">Government of India</div>
+        <div class="achieve-desc">
+Built. <br>
+Pitched.<br>
+Survived.<br></div>
+      </div>
+    </div>
+    
+    <div class="achieve-card reveal reveal-delay-2">
+      <div class="achieve-year">OPEN SOURCE </div>
+      <div class="achieve-card-inner">
+        <span class="achieve-icon">🌍</span>
+        <div class="achieve-title">GSSoC Contributor</div>
+        <div class="achieve-org" style="color:#9a6800">GirlScript Foundation</div>
+        <div class="achieve-desc">Merged PRs. <br>  
+Reviewed feedback. <br>
+Contributed publicly.</div>
+      </div>
+    </div>
+    <div class="achieve-card reveal reveal-delay-3">
+      <div class="achieve-year">LEADERSHIP</div>
+      <div class="achieve-card-inner">
+        <span class="achieve-icon">🎓</span>
+        <div class="achieve-title">AI Club Leadership</div>
+        <div class="achieve-org" style="color:var(--teal)">University AI Club</div>
+        <div class="achieve-desc">From contributor <br>
+to coordinator.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE — single column, scroll-triggered -->
+<section id="timeline">
+  <p class="section-label timeline-label">My Journey</p>
+  <h2 class="section-title timeline-title">
+Lore Worth Knowing.</h2>
+  <div class="timeline-track" id="timelineTrack">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2022</div>
+      <div class="timeline-event">The Rabbit Hole Begins</div>
+      <div class="timeline-detail">One YouTube tutorial. <br>
+One text editor. <br>
+
+I thought I was learning how to build websites. <br>
+
+Turns out I was accidentally choosing a career.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2024</div>
+      <div class="timeline-event">The First "Wait... I Made That"</div>
+      <div class="timeline-detail">Built my first real website. <br>
+
+Probably refreshed it fifty times just to make sure it was still online (localhost/3000 btw!). <br>
+
+It wasn't perfect. <br>
+It was mine.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2025</div>
+      <div class="timeline-event">Building Became an Obsession</div>
+      <div class="timeline-detail">Projects stopped being assignments. <br>
+
+Ideas started turning into late nights, <br>
+unfinished notes, <br>
+and browser tabs I'd never close.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2025</div>
+      <div class="timeline-event">The First Time The Stakes Felt Real</div>
+      <div class="timeline-detail">Smart India Hackathon. <br>
+
+A team. <br>
+A deadline. <br>
+A problem worth solving. <br>
+
+I learned more in two days <br>
+than I expected to learn in months.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2026</div>
+      <div class="timeline-event">Leading From The Front</div>
+      <div class="timeline-detail">Took up AI Club Leadership. <br>
+
+For the first time, the challenge wasn't just building things. <br>
+
+It was helping others build them too.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2026</div>
+      <div class="timeline-event">My Name On Someone Else's Repository</div>
+      <div class="timeline-detail">Opened my first open-source pull request. <br>
+
+Waited. <br>
+Refreshed GitHub.  <br>
+Waited some more. <br>
+
+Then came the notification: <br>
+
+Merged..</div>
+    </div>
+
+
+    <div class="timeline-item timeline-item-now">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">Now →</div>
+      <div class="timeline-event">Still Writing This Part</div>
+      <div class="timeline-detail">Currently exploring the MERN stack, <br>
+collecting screenshots I'll probably never use, <br>
+and building things that are a little more ambitious than the last thing I built. <br>
+
+Still curious. <br>
+
+Still figuring it out..</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT — crumpled paper bg, last section -->
+<section id="contact">
+  <div class="contact-paper-bg"></div>
+  <div class="contact-wrap">
+    <div class="reveal">
+      <p class="section-label" style="justify-content:center">Let's Connect</p>
+      <h2 class="contact-big">LET'S<br><span class="outline">MAKE</span><br>SOMETHING.</h2>
+    </div>
+    <p class="contact-sub reveal reveal-delay-1">Got an idea? <br>
+Building something interesting? <br>
+
+I'd love to hear about it.</p>
+    <div class="contact-links reveal reveal-delay-2">
+      <a href="mailto:yashchhipa8@gmail.com" class="contact-link cl-email">✉ yashchhipa8@gmail.com</a>
+      <a href="https://github.com/Yash-Chhipa" target="_blank" class="contact-link cl-github">↗ GitHub</a>
+      <a href="https://www.linkedin.com/in/yash-chhipa-14b43b380" target="_blank" class="contact-link cl-linkedin">in LinkedIn</a>
+    </div>
+    <p class="contact-doodle reveal reveal-delay-3">— or just tell me what you're building <br> ~yash.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#hero" class="footer-logo">~/yash<span style="color:var(--teal)">.</span></a>
+  <p class="footer-copy">Thanks for scrolling this far.</p>
+  <div class="footer-links">
+    <a href="https://github.com/Yash-Chhipa" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/yash-chhipa-14b43b380" target="_blank">LinkedIn</a>
+    <a href="mailto:yashchhipa8@gmail.com">Email</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

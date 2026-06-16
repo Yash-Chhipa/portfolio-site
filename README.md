@@ -6,7 +6,7 @@ Unlike traditional developer portfolios, this project focuses on storytelling, p
 
 ## 🚀 Live Demo
 
-[View Portfolio]([https://your-vercel-url.vercel.app](https://portfolio-site-yash-chhipas-projects.vercel.app/))
+[View Portfolio](https://portfolio-site-yash-chhipas-projects.vercel.app/)
 
 ---
 
